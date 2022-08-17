@@ -208,18 +208,21 @@ main {
 
                     &--tag {
                         position: relative;
-                        margin-bottom: 10px;
 
                         &>ul {
                             display: flex;
                             align-items: center;
                             flex-wrap: wrap;
-                            gap: 15px;
 
                             &>.tag-item {
                                 display: inline-block;
                                 padding: 5px 10px;
                                 text-transform: uppercase;
+                                margin-bottom: 10px;
+
+                                &:not(:last-child) {
+                                    margin-right: 15px;
+                                }
 
 
                                 &.--react {
