@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'HS-r';
+    src: url('../src/assets/fonts/HumanSans-Regular.woff2') format('woff2'),
+        url('../src/assets/fonts/HumanSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'HS-l';
+    src: url('../src/assets/fonts/HumanSans-Light.woff2') format('woff2'),
+        url('../src/assets/fonts/HumanSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'HS-m';
+    src: url('../src/assets/fonts/HumanSans-Medium.woff2') format('woff2'),
+        url('../src/assets/fonts/HumanSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+
+@font-face {
+    font-family: 'HS-b';
+    src: url('../src/assets/fonts/HumanSans-Bold.woff2') format('woff2'),
+        url('../src/assets/fonts/HumanSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}

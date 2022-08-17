@@ -1,0 +1,68 @@
+// css header
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: var(--height-header);
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    &.active {
+        background-color: $bg-cl;
+        box-shadow: 0 8px 40px rgba($primary-cl, 15%);
+        transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+
+    &>.container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: $txt-cl;
+            font-family: HS-r;
+            font-size: 2.4rem;
+            letter-spacing: .1rem;
+            transition: all .2s ease-out;
+
+            &:hover {
+                color: $secondary-cl;
+                transition: all .2s ease-in;
+            }
+        }
+
+        &>ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            &>li {
+                display: flex;
+                height: 100%;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+
+                &>a {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    color: $txt-cl;
+                    transition: all .2s ease-out;
+                    letter-spacing: .05rem;
+                }
+            }
+
+        }
+    }
+}

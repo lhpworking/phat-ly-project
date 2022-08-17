@@ -1,0 +1,143 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // => 10px = 1rem
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: auto;
+    @include text(var(--body16-fs), HS-r, var(--body16-lh), $txt-cl, none); // tuỳ chỉnh
+    background-color: $bg-cl;
+    position: relative;
+
+    .container-fluid {
+        width: 100%;
+        padding-right: var(--gap);
+        padding-left: var(--gap);
+        margin-right: auto;
+        margin-left: auto;
+
+        @include xs {
+            padding-right: calc(var(--gap) / 2);
+            padding-left: calc(var(--gap) / 2);
+        }
+    }
+
+    .container {
+        width: 100%;
+        padding-right: calc(var(--gap) / 2);
+        padding-left: calc(var(--gap) / 2);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: $xxs-min) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media (min-width: $xs-min) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: $sm-min) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: $md-min) {
+        .container {
+            max-width: $container-width;
+        }
+    }
+
+    .main-wrapper {
+        width: 100%;
+        margin: auto;
+        @include visible;
+    }
+
+    @include lg {
+        // CSS responsive large desktop
+    }
+
+    @include md {
+        // CSS responsive desktop
+    }
+
+    @include sm {
+        // CSS responsive tablet
+    }
+
+    @include xs {
+        // CSS responsive mobile
+    }
+
+    @include xxs {
+        // CSS responsive small mobile
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    $bg-cl: hsl(230, 6%, 20%);
+    $txt-cl: hsl(210, 17%, 98%);
+    $primary-cl: hsl(206, 14%, 53%);
+    $secondary-cl: hsl(161, 17%, 41%);
+
+    body {
+        background-color: $bg-cl  !important;
+        color: $txt-cl  !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+
+        color: $txt-cl  !important;
+    }
+
+    @media (hover:hover) {
+        a:hover {
+            opacity: .6;
+            transition: opacity .2s ease-in-out;
+            will-change: opacity;
+        }
+    }
+
+    header.active {
+        background-color: hsl(225, 6%, 13%) !important;
+        box-shadow: 0 .5px .5px hsl(224, 6%, 37%) !important;
+        transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+
+    .address {
+        &>svg {
+            fill: $txt-cl;
+        }
+
+    }
+}
