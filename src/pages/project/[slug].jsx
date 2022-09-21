@@ -14,7 +14,7 @@ export function ProjectDetail1() {
             <section className='project section'>
                 <div className="container">
                     <figure className='project__img'>
-                        <img src="public/img/pokemon-project.png" alt="pokemon-project" />
+                        <img src="/img/pokemon-project.png" alt="pokemon-project" />
                         <figcaption className='heading --h1'>
                             Pokemon Project
                         </figcaption>
@@ -53,7 +53,7 @@ export function ProjectDetail2() {
             <section className='project section'>
                 <div className="container">
                     <figure className='project__img'>
-                        <img src="public/img/retheater-project.png" alt="pokemon-project" />
+                        <img src="/img/retheater-project.png" alt="pokemon-project" />
                         <figcaption className='heading --h1'>
                             Retheater Project
                         </figcaption>
@@ -92,7 +92,7 @@ export function ProjectDetail3() {
             <section className='project section'>
                 <div className="container">
                     <figure className='project__img'>
-                        <img src="public/img/shopper-project.png" alt="shopper-project" />
+                        <img src="/img/shopper-project.png" alt="shopper-project" />
                         <figcaption className='heading --h1'>
                             Shopper Project
                         </figcaption>
