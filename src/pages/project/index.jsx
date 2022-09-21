@@ -13,7 +13,7 @@ export default function Projects() {
                             slug: "p-1"
                         }) }>
                             <div className="box-photo">
-                                <img src="/public/img/pokemon-project.png" alt="pokemon" />
+                                <img src="/img/pokemon-project.png" alt="pokemon" />
                             </div>
                         </Link>
                     </figure>
@@ -40,7 +40,7 @@ export default function Projects() {
                             slug: "p-2"
                         }) }>
                             <div className="box-photo">
-                                <img src="/public/img/retheater-project.png" alt="pokemon" />
+                                <img src="/img/retheater-project.png" alt="retheater" />
                             </div>
                         </Link>
                     </figure>
@@ -67,7 +67,7 @@ export default function Projects() {
                             slug: "p-3"
                         }) }>
                             <div className="box-photo">
-                                <img src="/public/img/shopper-project.png" alt="pokemon" />
+                                <img src="/img/shopper-project.png" alt="shopper" />
                             </div>
                         </Link>
                     </figure>
