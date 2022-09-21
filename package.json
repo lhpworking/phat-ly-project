@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "sass": " sass src/assets/scss/style.scss:public/dest/style.css --watch --style compressed"
+    "preview": "vite preview"
   },
   "dependencies": {
     "classnames": "^2.3.1",

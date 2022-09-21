@@ -8,9 +8,9 @@ export default function Footer() {
           <p>Frontend developer</p>
         </div>
         <ul className="links">
-          <li><a className="link" href="">Facebook</a></li>
-          <li><a className="link" href="">Github</a></li>
-          <li><a className="link" href="">Linkedin</a></li>
+          <li><a className="link" href="https://www.frontendmentor.io/profile/lhpworking" target="_blank">Frontend Mentor</a></li>
+          <li><a className="link" href="https://github.com/lhpworking" target="_blank">Github</a></li>
+          <li><a className="link" href="https://www.linkedin.com/in/lhngpht/" target="_blank">Linkedin</a></li>
         </ul>
         <div className="copyright">
           <p>&copy; Designed & Developed by Phat Ly.</p>

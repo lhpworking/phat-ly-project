@@ -8,11 +8,11 @@ export default function Main() {
         <>
             {/* information */ }
             <section className="info section">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="info__content">
                         <h1 className='heading --h1'>
                             <span className='dot'>Hello</span>
-                            I'm <span className='wavy'>Phat Ly</span>
+                            I'm <span >Phat Ly</span>
                         </h1>
                         <br />
                         <h5 className='heading --h5'>Frontend Developer</h5>
@@ -28,7 +28,7 @@ export default function Main() {
                                 <p>JAVASCRIPT/REACT,JQUERY</p>
                             </li>
                             <li>
-                                <p>GIT</p>
+                                <p>GIT, FIGMA</p>
                             </li>
                         </ul>
                         <br />

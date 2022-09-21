@@ -1,0 +1,71 @@
+@use "/src/assets/scss/core/variables" as *;
+
+.project {
+    &>.container {
+        &>.project__img {
+            position: relative;
+            display: inline-grid;
+
+            &>img {
+                aspect-ratio: 16/9;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &::after {
+                content: '';
+                background-color: rgba($color: $txt-cl, $alpha: .5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            &>figcaption {
+                position: absolute;
+                display: inherit;
+                place-items: center;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                z-index: 2;
+                color: #fff;
+            }
+
+            &>a {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: inline-block;
+                border: 1px solid #fff;
+                padding: 5px 20px;
+                border-radius: 100vmax;
+                text-transform: capitalize;
+                color: #fff;
+                z-index: 3;
+                transition: border .2s ease-in-out,
+                    background-color .2s ease-in-out;
+                will-change: border, background-color;
+
+                &:hover {
+                    border: 1px solid $secondary-cl;
+                    background-color: $secondary-cl;
+                }
+            }
+
+
+
+        }
+
+        &>.project__content {
+            padding: 3rem;
+
+            &>.des {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

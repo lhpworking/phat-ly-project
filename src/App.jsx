@@ -1,25 +1,28 @@
 
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from './components/Header';
-import Main from "./components/Main";
-import { CONTACT_PATH, HOME_PATH, PROJECT_PATH } from "./constants/api";
-import MainLayout from "./layouts/MainLayout";
-import Contact from "./pages/Contact";
-import Projects from "./pages/project";
+import { HOME_PATH, PROJECT_PATH } from "./constants/api";
+import { ProjectDetail1, ProjectDetail2, ProjectDetail3 } from "./pages/project/[slug]";
+
+const Projects = lazy(() => import("./pages/project"))
+const Main = lazy(() => import("./components/Main"))
+const MainLayout = lazy(() => import("./layouts/MainLayout"))
 
 function App() {
   return (
-
-    <>
-      {/* <Loading /> */ }
+    <Suspense fallback={ <span>Loading...</span> }>
       <Routes>
         <Route element={ <MainLayout /> }>
           <Route index path={ HOME_PATH } element={ <Main /> } />
-          <Route path={ PROJECT_PATH } element={ <Projects /> } />
-          <Route index path={ CONTACT_PATH } element={ <Contact /> } />
+          <Route path={ PROJECT_PATH }  >
+            <Route index element={ <Projects /> } />
+            <Route path="/projects/p-1" element={ <ProjectDetail1 /> } />
+            <Route path="/projects/p-2" element={ <ProjectDetail2 /> } />
+            <Route path="/projects/p-3" element={ <ProjectDetail3 /> } />
+          </Route>
         </Route>
       </Routes>
-    </>
+    </Suspense>
   )
 }
 
