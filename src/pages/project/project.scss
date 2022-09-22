@@ -63,8 +63,14 @@
         &>.project__content {
             padding: 3rem;
 
-            &>.des {
+            &>.des,
+            &>.function,
+            &>.tech {
                 margin-bottom: 3rem;
+
+                &>ul {
+                    list-style: square;
+                }
             }
         }
     }

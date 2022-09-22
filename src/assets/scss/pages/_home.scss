@@ -197,7 +197,7 @@ main {
 
                     &>p {
                         color: $primary-cl;
-                        @include overtext(2)
+                        @include overtext(1)
                     }
                 }
 

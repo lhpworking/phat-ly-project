@@ -31,7 +31,7 @@ export default function Projects() {
                                 <li className='tag-item --js'> <span>js</span></li>
                             </ul>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia hic dignissimos molestias enim ratione! Debitis aspernatur eius optio repudiandae rerum, sunt ducimus, nobis alias ut ipsum quia eum aliquid ea?</p>
+                        <p>Website about pokemon, you can search and view information about your favorite pokemon. Data pokemon is got from <a href="https://pokeapi.co/" target="_blank">https://pokeapi.co/</a></p>
                     </div>
                 </div>
                 <div className='card'>
@@ -58,7 +58,7 @@ export default function Projects() {
                                 <li className='tag-item --js'> <span>js</span></li>
                             </ul>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia hic dignissimos molestias enim ratione! Debitis aspernatur eius optio repudiandae rerum, sunt ducimus, nobis alias ut ipsum quia eum aliquid ea?</p>
+                        <p>A movie website that you can watch Tv series and Movies .It's always get new ,popular and hot trend movies , tv series .Then, you also preview description , trailer , author, cast , score about movies and tv series from the website .Data movies and tv series is got from <a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a> </p>
                     </div>
                 </div>
                 <div className='card'>
@@ -85,7 +85,7 @@ export default function Projects() {
                                 <li className='tag-item --js'> <span>js</span></li>
                             </ul>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia hic dignissimos molestias enim ratione! Debitis aspernatur eius optio repudiandae rerum, sunt ducimus, nobis alias ut ipsum quia eum aliquid ea?</p>
+                        <p>Shopper website provide product that you need and free shipping worldwide.</p>
                     </div>
                 </div>
             </div >

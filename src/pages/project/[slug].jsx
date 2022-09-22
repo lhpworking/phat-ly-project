@@ -18,7 +18,7 @@ export function ProjectDetail1() {
                         <figcaption className='heading --h1'>
                             Pokemon Project
                         </figcaption>
-                        <a href="https://pokemon-project-kxytac3ix-lhngpht.vercel.app/" target="_blank">
+                        <a href="https://pokemon-project-xi.vercel.app/" target="_blank">
                             visit
                         </a>
                     </figure>
@@ -26,6 +26,15 @@ export function ProjectDetail1() {
                         <div className="des">
                             <h3 className='heading --h3 dot'>Overview</h3>
                             <p>Website about pokemon, you can search and view information about your favorite pokemon. Data pokemon is got from <a href="https://pokeapi.co/" target="_blank">https://pokeapi.co/</a></p>
+                        </div>
+                        <div className="function">
+                            <h3 className='heading --h3  dot'> Function</h3>
+                            <ul>
+                                <li>Get Pokemon List</li>
+                                <li>Get Pokemon Detail</li>
+                                <li>Search filter pokemon in pokemon list</li>
+                                <li>Pagination get next pokemon list</li>
+                            </ul>
                         </div>
                         <div className="tech">
                             <h3 className='heading --h3  dot'> Technologies</h3>
@@ -66,6 +75,16 @@ export function ProjectDetail2() {
                             <h3 className='heading --h3 dot'>Overview</h3>
                             <p>A movie website that you can watch Tv series and Movies .It's always get new ,popular and hot trend movies , tv series .Then, you also preview description , trailer , author, cast , score about movies and tv series from the website .Data movies and tv series is got from <a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a>   </p>
                         </div>
+                        <div className="function">
+                            <h3 className='heading --h3  dot'> Function</h3>
+                            <ul>
+                                <li>Get Movie, Tv Series List</li>
+                                <li>Get Detail Movie, Tv Series</li>
+                                <li>Get Trailer and Similar Movie, Tv Series</li>
+                                <li>Search Filter Movie, Tv Series in Search Page</li>
+                                <li>Pagination Get Next Movie, Tv Series List </li>
+                            </ul>
+                        </div>
                         <div className="tech">
                             <h3 className='heading --h3  dot'> Technologies</h3>
                             <ul>
@@ -103,7 +122,20 @@ export function ProjectDetail3() {
                     <div className="project__content">
                         <div className="des">
                             <h3 className='heading --h3 dot'>Overview</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat quo voluptatum fugit nam optio eligendi repellat modi mollitia, aut omnis hic rem consequatur cumque similique enim blanditiis sed culpa.</p>
+                            <p>Shopper website provide product that you need and free shipping worldwide.</p>
+                        </div>
+                        <div className="function">
+                            <h3 className='heading --h3  dot'> Function</h3>
+                            <ul>
+                                <li>Get Product List</li>
+                                <li>Get Product Detail</li>
+                                <li>Register account and login</li>
+                                <li>Get Information user</li>
+                                <li>Add Product to Wish List</li>
+                                <li>Get Category </li>
+                                <li>Pagination Get Next Product List</li>
+                                <li>Countdown Sale Time</li>
+                            </ul>
                         </div>
                         <div className="tech">
                             <h3 className='heading --h3  dot'> Technologies</h3>
