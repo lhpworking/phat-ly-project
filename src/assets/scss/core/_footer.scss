@@ -3,18 +3,18 @@ footer {
     position: relative;
     padding: 3rem 0;
 
-    &>.container-fluid {
+    & > .container-fluid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         position: relative;
 
-        &>.links {
+        & > .links {
             display: flex;
             align-items: center;
             justify-content: space-between;
 
-            &>li {
-                &>a {
+            & > li {
+                & > a {
                     color: $txt-cl;
                     display: flex;
                     align-items: baseline;
@@ -35,7 +35,7 @@ footer {
             }
         }
 
-        &>.copyright {
+        & > .copyright {
             text-align: end;
         }
     }
@@ -48,7 +48,7 @@ footer {
             grid-template-columns: 1fr;
             gap: 20px;
 
-            &>.copyright {
+            & > .copyright {
                 text-align: start;
             }
         }

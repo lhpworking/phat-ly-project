@@ -8,11 +8,12 @@ export default function Projects() {
             <h2 className='heading --h2 wavy dot'>project</h2>
             <div className="container">
                 <div className='card'>
-                    <figure className='card__img'>
+                    <figure className='card__img '>
                         <Link to={ generatePath(PROJECT_DETAIL_PATH, {
                             slug: "p-1"
                         }) }>
                             <div className="box-photo">
+                                <p></p>
                                 <img src="/img/pokemon-project.png" alt="pokemon" />
                             </div>
                         </Link>

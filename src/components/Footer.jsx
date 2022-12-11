@@ -1,5 +1,6 @@
 
 export default function Footer() {
+
   return (
     <footer>
       <div className="container-fluid">
@@ -16,8 +17,10 @@ export default function Footer() {
           <p>&copy; Designed & Developed by Phat Ly.</p>
           <p>All rights reserved 2022.</p>
         </div>
+
       </div>
-    </footer>
+
+    </footer >
 
   )
 }

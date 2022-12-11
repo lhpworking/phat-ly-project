@@ -3,12 +3,12 @@ import React, { useEffect } from 'react'
 import "./project.scss"
 
 export function ProjectDetail1() {
-    useEffect(() => {
-        window.scroll({
+    useEffect( () => {
+        window.scroll( {
             top: 0,
             behavior: 'smooth'
-        })
-    }, [])
+        } )
+    }, [] )
     return (
         <main>
             <section className='project section'>
@@ -51,12 +51,12 @@ export function ProjectDetail1() {
     )
 }
 export function ProjectDetail2() {
-    useEffect(() => {
-        window.scroll({
+    useEffect( () => {
+        window.scroll( {
             top: 0,
             behavior: 'smooth'
-        })
-    }, [])
+        } )
+    }, [] )
     return (
         <main>
             <section className='project section'>
@@ -100,12 +100,12 @@ export function ProjectDetail2() {
     )
 }
 export function ProjectDetail3() {
-    useEffect(() => {
-        window.scroll({
+    useEffect( () => {
+        window.scroll( {
             top: 0,
             behavior: 'smooth'
-        })
-    }, [])
+        } )
+    }, [] )
     return (
         <main>
             <section className='project section'>

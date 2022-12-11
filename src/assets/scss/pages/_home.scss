@@ -2,18 +2,18 @@
 main {
 
     // .info
-    &>.info {
+    & > .info {
         position: relative;
 
-        &>.container {
+        & > .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             .info {
                 &__content {
-                    &>h1 {
-                        &>span {
+                    & > h1 {
+                        & > span {
                             &:first-child {
                                 margin-bottom: 10px;
                             }
@@ -25,15 +25,15 @@ main {
                         }
                     }
 
-                    &>h5 {
+                    & > h5 {
                         letter-spacing: 1rem;
 
                     }
 
-                    &>.skills {
-                        &>li {
+                    & > .skills {
+                        & > li {
 
-                            &>p {
+                            & > p {
                                 display: flex;
                                 align-items: baseline;
                                 gap: 5px;
@@ -50,11 +50,11 @@ main {
                         }
                     }
 
-                    &>.address {
+                    & > .address {
                         display: flex;
                         align-items: center;
 
-                        &>svg {
+                        & > svg {
                             margin-right: 10px;
                         }
                     }
@@ -65,7 +65,7 @@ main {
                     position: relative;
                     max-width: 500px;
 
-                    &>img {
+                    & > img {
                         aspect-ratio: 1;
                         object-fit: cover;
                         width: 100%;
@@ -77,15 +77,15 @@ main {
     }
 
     // project
-    &>.projects {
+    & > .projects {
         position: relative;
 
-        &>h2 {
+        & > h2 {
             margin-bottom: 10rem;
             justify-content: center;
         }
 
-        &>.container {
+        & > .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 35px;
@@ -134,11 +134,11 @@ main {
                 &__content {
                     padding: 20px;
 
-                    &>h3 {
+                    & > h3 {
                         position: relative;
                         margin-bottom: 10px;
 
-                        &>a {
+                        & > a {
                             color: $txt-cl;
 
                             &:hover {
@@ -151,12 +151,12 @@ main {
                     &--tag {
                         position: relative;
 
-                        &>ul {
+                        & > ul {
                             display: flex;
                             align-items: center;
                             flex-wrap: wrap;
 
-                            &>.tag-item {
+                            & > .tag-item {
                                 display: inline-block;
                                 padding: 5px 10px;
                                 text-transform: uppercase;
@@ -195,7 +195,7 @@ main {
                         }
                     }
 
-                    &>p {
+                    & > p {
                         color: $primary-cl;
                         @include overtext(1)
                     }
@@ -217,16 +217,16 @@ main {
 
 
     // contact
-    &>.contact {
-        &>h2 {
+    & > .contact {
+        & > h2 {
             justify-content: center;
             margin-bottom: 10rem;
         }
 
-        &>.container-fluid {
+        & > .container-fluid {
             text-align: center;
 
-            &>a {
+            & > a {
                 &:hover {
                     color: $primary-cl;
                     transition: all .2s ease-in-out;
@@ -238,8 +238,8 @@ main {
 
 @include sm {
     main {
-        &>.info {
-            &>.container {
+        & > .info {
+            & > .container {
                 .info {
                     &__figure {
                         max-width: 300px;
@@ -252,18 +252,18 @@ main {
 
 @include xs {
     main {
-        &>.info {
-            &>.container {
+        & > .info {
+            & > .container {
                 flex-direction: column;
             }
         }
 
-        &>.projects {
-            &>h2 {
+        & > .projects {
+            & > h2 {
                 margin-bottom: 5rem;
             }
 
-            &>.container {
+            & > .container {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
 
@@ -271,8 +271,8 @@ main {
 
 
 
-        &>.contact {
-            &>h2 {
+        & > .contact {
+            & > h2 {
                 margin-bottom: 5rem;
             }
 
