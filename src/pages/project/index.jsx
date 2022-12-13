@@ -1,11 +1,11 @@
 import React from 'react';
 import { generatePath, Link } from 'react-router-dom';
-import { PROJECT_DETAIL_PATH } from '../../constants/api';
+import { PROJECT_DETAIL_PATH } from '../../constants/config';
 
 export default function Projects() {
     return (
         <section className="projects section">
-            <h2 className='heading --h2 wavy dot'>project</h2>
+            <h2 className='heading --h2 dot'>project</h2>
             <div className="container">
                 <div className='card'>
                     <figure className='card__img '>
@@ -87,6 +87,33 @@ export default function Projects() {
                             </ul>
                         </div>
                         <p>Shopper website provide product that you need and free shipping worldwide.</p>
+                    </div>
+                </div>
+                <div className='card'>
+                    <figure className='card__img'>
+                        <Link to={ generatePath(PROJECT_DETAIL_PATH, {
+                            slug: "p-4"
+                        }) }>
+                            <div className="box-photo">
+                                <img src="/public/img/todo-project.png" alt="shopper" />
+                            </div>
+                        </Link>
+                    </figure>
+                    <div className='card__content'>
+                        <h3 className='heading --h3'>
+                            <Link to={ generatePath(PROJECT_DETAIL_PATH, {
+                                slug: "p-4"
+                            }) }>Todos Project</Link>
+                        </h3>
+                        <div className="card__content--tag">
+                            <ul >
+                                <li className='tag-item --react'> <span>react</span></li>
+                                <li className='tag-item --html'> <span>html</span></li>
+                                <li className='tag-item --scss'> <span>scss</span></li>
+                            </ul>
+                        </div>
+                        <p>Todos app is helping you to plan your work, your life,...</p>
+
                     </div>
                 </div>
             </div >

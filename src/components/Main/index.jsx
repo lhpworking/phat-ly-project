@@ -1,6 +1,7 @@
 import React from 'react'
-import Contact from '../pages/Contact'
-import Projects from '../pages/project'
+import Contact from '../../pages/contact/Contact'
+import Projects from '../../pages/project'
+import "./main.scss"
 
 
 export default function Main() {

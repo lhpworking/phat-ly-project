@@ -1,10 +1,11 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../../src/utils/theme-toggle.js";
-import { onClick } from "../../src/utils/theme-toggle.js";
-import "../../src/utils/toggle-theme.scss";
-import { HOME_PATH, PROJECT_PATH } from "../constants/api";
+import { HOME_PATH, PROJECT_PATH } from "../../constants/config";
+import "../../utils/theme-toggle";
+import { onClickTheme } from "../../utils/theme-toggle";
+import "./header.scss";
+import "./toggle-theme.scss";
 
 export default function Header() {
     const [scroll, setScroll] = useState(0);
@@ -75,7 +76,7 @@ export default function Header() {
                                 title="Toggles light & dark"
                                 aria-label="auto"
                                 aria-live="polite"
-                                onClick={ onClick }
+                                onClick={ onClickTheme }
                             >
                                 <svg
                                     className="sun-and-moon"

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom"
 import '../public/fonts.css'
 import App from './App'
-import './assets/scss/style.scss'
+import "./assets/scss/style.scss"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

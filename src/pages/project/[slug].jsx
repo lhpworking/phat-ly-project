@@ -3,12 +3,12 @@ import React, { useEffect } from 'react'
 import "./project.scss"
 
 export function ProjectDetail1() {
-    useEffect( () => {
-        window.scroll( {
+    useEffect(() => {
+        window.scroll({
             top: 0,
             behavior: 'smooth'
-        } )
-    }, [] )
+        })
+    }, [])
     return (
         <main>
             <section className='project section'>
@@ -51,12 +51,12 @@ export function ProjectDetail1() {
     )
 }
 export function ProjectDetail2() {
-    useEffect( () => {
-        window.scroll( {
+    useEffect(() => {
+        window.scroll({
             top: 0,
             behavior: 'smooth'
-        } )
-    }, [] )
+        })
+    }, [])
     return (
         <main>
             <section className='project section'>
@@ -100,12 +100,12 @@ export function ProjectDetail2() {
     )
 }
 export function ProjectDetail3() {
-    useEffect( () => {
-        window.scroll( {
+    useEffect(() => {
+        window.scroll({
             top: 0,
             behavior: 'smooth'
-        } )
-    }, [] )
+        })
+    }, [])
     return (
         <main>
             <section className='project section'>
@@ -143,6 +143,53 @@ export function ProjectDetail3() {
                                 <li>HTML</li>
                                 <li>CSS/SCSS</li>
                                 <li>JAVASCRIPT/REACT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    )
+}
+export function ProjectDetail4() {
+    useEffect(() => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
+    return (
+        <main>
+            <section className='project section'>
+                <div className="container">
+                    <figure className='project__img'>
+                        <img src="/public/img/todo-project.png" alt="todo-project" />
+                        <figcaption className='heading --h1'>
+                            Todos Project
+                        </figcaption>
+                        <a href="https://todos-app-project.vercel.app/" target="_blank">
+                            visit
+                        </a>
+                    </figure>
+                    <div className="project__content">
+                        <div className="des">
+                            <h3 className='heading --h3 dot'>Overview</h3>
+                            <p>Todos app is helping you to plan your work, your life,...</p>
+                        </div>
+                        <div className="function">
+                            <h3 className='heading --h3  dot'> Function</h3>
+                            <ul>
+                                <li>Add task</li>
+                                <li>Check task if task is done</li>
+                                <li>Delete task</li>
+                            </ul>
+                        </div>
+                        <div className="tech">
+                            <h3 className='heading --h3  dot'> Technologies</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>REACT</li>
                             </ul>
                         </div>
                     </div>

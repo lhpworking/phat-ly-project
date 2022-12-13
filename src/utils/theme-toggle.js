@@ -1,10 +1,11 @@
 const storageKey = "theme-preference";
 
-export const onClick = () => {
+export const onClickTheme = () => {
     // flip current value
     theme.value = theme.value === "light" ? "dark" : "light";
     setPreference();
 };
+
 const getColorPreference = () => {
     if (localStorage.getItem(storageKey)) return localStorage.getItem(storageKey);
     else

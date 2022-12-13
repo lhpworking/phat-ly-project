@@ -1,0 +1,284 @@
+// CSS HOMEPAGE
+@import "/src/assets/scss/core/variables";
+@import "/src/assets/scss/core/mixins";
+
+main {
+
+    // .info
+    & > .info {
+        position: relative;
+
+        & > .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .info {
+                &__content {
+                    & > h1 {
+                        & > span {
+                            &:first-child {
+                                margin-bottom: 10px;
+                            }
+
+                            &:last-child {
+                                color: $secondary-cl;
+                            }
+
+                        }
+                    }
+
+                    & > h5 {
+                        letter-spacing: 1rem;
+
+                    }
+
+                    & > .skills {
+                        & > li {
+
+                            & > p {
+                                display: flex;
+                                align-items: baseline;
+                                gap: 5px;
+
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 5px;
+                                    height: 5px;
+                                    background-color: $secondary-cl;
+                                    ;
+                                }
+                            }
+                        }
+                    }
+
+                    & > .address {
+                        display: flex;
+                        align-items: center;
+
+                        & > svg {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                &__figure {
+                    display: block;
+                    position: relative;
+                    max-width: 500px;
+
+                    & > img {
+                        aspect-ratio: 1;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // project
+    & > .projects {
+        position: relative;
+
+        & > h2 {
+            margin-bottom: 10rem;
+            justify-content: center;
+        }
+
+        & > .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+
+            .card {
+                box-shadow: 0 8px 40px rgba($primary-cl, 15%);
+
+                &__img {
+                    position: relative;
+
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: #202121;
+                        opacity: 0;
+                        z-index: 1;
+                        pointer-events: none;
+                        cursor: pointer;
+                    }
+
+                    .box-photo {
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+
+                        img {
+                            position: relative;
+                            display: block;
+                            aspect-ratio: 16/9;
+                            object-fit: cover;
+                            width: 100%;
+                            height: auto;
+                            z-index: 1;
+                            transition: transform .2s ease-in-out;
+
+                        }
+                    }
+
+                }
+
+                &__content {
+                    padding: 20px;
+
+                    & > h3 {
+                        position: relative;
+                        margin-bottom: 10px;
+
+                        & > a {
+                            color: $txt-cl;
+
+                            &:hover {
+                                color: $primary-cl;
+                                transition: all .2s ease-in-out;
+                            }
+                        }
+                    }
+
+                    &--tag {
+                        position: relative;
+
+                        & > ul {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+                            & > .tag-item {
+                                display: inline-block;
+                                padding: 5px 10px;
+                                text-transform: uppercase;
+                                margin-bottom: 10px;
+
+                                &:not(:last-child) {
+                                    margin-right: 15px;
+                                }
+
+
+                                &.--react {
+                                    background-color: rgba($color: $react-cl, $alpha: .1);
+                                    color: $react-cl;
+                                }
+
+                                &.--scss {
+                                    background-color: rgba($color: $scss-cl, $alpha: .1);
+                                    color: $scss-cl;
+                                }
+
+                                &.--css {
+                                    background-color: rgba($color: $css-cl, $alpha: .1);
+                                    color: $css-cl;
+                                }
+
+                                &.--js {
+                                    background-color: rgba($color: $js-cl, $alpha: .1);
+                                    color: $js-cl;
+                                }
+
+                                &.--html {
+                                    background-color: rgba($color: $html-cl, $alpha: .1);
+                                    color: $html-cl;
+                                }
+                            }
+                        }
+                    }
+
+                    & > p {
+                        color: $primary-cl;
+                        @include overtext(1)
+                    }
+                }
+
+                &:hover {
+                    .card__img {
+                        &::after {
+                            opacity: .6;
+                            transition: opacity .2s ease-in-out;
+                            will-change: opacity;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // contact
+    & > .contact {
+        & > h2 {
+            justify-content: center;
+            margin-bottom: 10rem;
+        }
+
+        & > .container-fluid {
+            text-align: center;
+
+            & > a {
+                &:hover {
+                    color: $primary-cl;
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    main {
+        & > .info {
+            & > .container {
+                .info {
+                    &__figure {
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    main {
+        & > .info {
+            & > .container {
+                flex-direction: column;
+            }
+        }
+
+        & > .projects {
+            & > h2 {
+                margin-bottom: 5rem;
+            }
+
+            & > .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+        }
+
+
+
+        & > .contact {
+            & > h2 {
+                margin-bottom: 5rem;
+            }
+
+        }
+    }
+}
